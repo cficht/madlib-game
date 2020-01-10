@@ -9,7 +9,8 @@ const verb2 = document.getElementById('verb-2');
 const adj3 = document.getElementById('adjective-3');
 const storyText = document.getElementById('storytext');
 
-storyText.style.visibility = "hidden";
+// storyText.style.visibility = "hidden";
+storyText.style.display = "none";
 
 function startMadlib() {
     const adjective1Input = document.getElementById('adjective-1-input').value;
@@ -30,7 +31,40 @@ function startMadlib() {
     verb2.textContent = verb2Input;
     adj3.textContent = adjective3Input;
 
-    storyText.style.visibility = "visible";
+    if (adj1.textContent.length === 0) {
+        adj1.textContent = 'best';
+    }
+
+    if (adj2.textContent.length === 0) {
+        adj2.textContent = 'worst';
+    }
+
+    if (nou1.textContent.length === 0) {
+        nou1.textContent = 'Light';
+    }
+
+    if (nou2.textContent.length === 0) {
+        nou2.textContent = 'Darkness';
+    }
+
+    if (verb1.textContent.length === 0) {
+        verb1.textContent = 'going';
+    }
+
+    if (nou3.textContent.length === 0) {
+        nou3.textContent = 'Heaven';
+    }
+
+    if (verb2.textContent.length === 0) {
+        verb2.textContent = 'going';
+    }
+
+    if (adj3.textContent.length === 0) {
+        adj3.textContent = 'noisiest';
+    }
+
+    // storyText.style.visibility = "visible";
+    storyText.style.display = "inline";
 }
 
 button.addEventListener('click', startMadlib);

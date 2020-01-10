@@ -1,25 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 50px;
     font-family: Courier;
 }
 
 header {
-    border: solid black;
+    border: dotted yellow;
+    /* border-radius: 30px; */
+    border-width: 10px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: Courier;
-    background-color: lightgreen;
+    background-color: black;
+    color: white;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 10px;
+}
+
+
+span {
+    color: yellow;
+}
+
+footer {
+    border: dotted yellow;
+    /* border-radius: 30px; */
+    border-width: 10px;
+    width: 230px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Courier;
+    background-color: black;
+    color: white;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 10px;
 }
 
 #inputbox {
-    text-align: center;
-    border: solid black;
+    border: dotted yellow;
+    /* border-radius: 30px; */
+    border-width: 10px;
     width: 300px;
     margin: 0 auto;
-    background-color: lightyellow;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Courier;
+    background-color: black;
+    color: white;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 10px;
 }
 
 #storybox {
+    border: dotted yellow;
+    /* border-radius: 30px; */
+    border-width: 10px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    border: solid black;
-    background-color: lightpink;
+    font-family: Courier;
+    background-color: black;
+    color: white;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 10px;
+}
+
+#button {
+    transition: all .2s ease-in-out;
+}
+
+#button:hover {
+    /* height: 100px;
+    width: 400px; */
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+
+input {
+    font-weight: normal;
+}
+
+input:hover {
+    font-weight: bolder;
 }
